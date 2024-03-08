@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicaciones de Usuarios</title>
+    <title>API with Pagination</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Publicaciones de Usuarios</h1>
-    <div id="posts"></div>
+    <h1>Datos de la API con Paginación</h1>
+    <table id="api-table">
+        <thead>
+            <tr>
+                <th>API</th>
+                <th>Descripción</th>
+                <th>Auth</th>
+                <th>HTTPS</th>
+                <th>Cors</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Los datos de la API se llenarán aquí -->
+        </tbody>
+    </table>
+    <div id="pagination">
+        <button id="prev-page">Anterior</button>
+        <span id="current-page">1</span>
+        <button id="next-page">Siguiente</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
+
+
