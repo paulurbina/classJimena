@@ -1,10 +1,49 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-.post {
-    background-color: #f4f4f4;
-    margin: 20px 0;
+h1 {
+    text-align: center;
+}
+
+#api-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#api-table th, #api-table td {
+    border: 1px solid #ddd;
     padding: 10px;
-    border-radius: 5px;
+    text-align: left;
+}
+
+#api-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+#api-table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#pagination button:disabled {
+    background-color: #888;
 }
